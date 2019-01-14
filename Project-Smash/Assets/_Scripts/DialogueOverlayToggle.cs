@@ -13,7 +13,7 @@ public class DialogueOverlayToggle : MonoBehaviour
 void Start()
     {
         overlayToggle = GameObject.Find("DialogueOverlay");
-        overlayToggle.SetActive(false);
+        //overlayToggle.SetActive(false);
        // GameObject temp = GameObject.Find("TextBox");
        // script = temp.GetComponent<TextReader>();
     }

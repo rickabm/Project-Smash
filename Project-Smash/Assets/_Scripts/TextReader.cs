@@ -35,7 +35,7 @@ public Text txt;
     {
         txt.text = currentText;
         if(Input.GetKeyDown(KeyCode.Space) && counter < textLines.Count-1)
-            //&& currentText == textLines[counter].ToString())
+            //currentText == textLines[counter].ToString())
         {           
             counter++;
             StartCoroutine(showText());
@@ -58,7 +58,7 @@ public Text txt;
     
     IEnumerator showText()
     {
-            for(int j = 0; j < textLines[counter].ToString().Length; j++)
+            for(int j = 0; j <= textLines[counter].ToString().Length; j++)
             {
                 /*NOT DONE D: ---- ATTEMPTING TO ADD SPECIAL PAUSE CHARACTER FOR TEXT SCROLLING
                 if(textLines[counter].ToString()[j] == '#')
